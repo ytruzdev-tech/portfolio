@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yule Tan Ruz | Entry-Level SOC Analyst &amp; Incident Handler</title>
+  <meta name="description" content="Portfolio of Yule Tan Ruz, an entry-level SOC Analyst / Junior Incident Handler trained in Computer Security Incident Handling (TESDA Level I).">
+  <!-- Open Graph (replace the URL/image after deploying) -->
+  <meta property="og:title" content="Yule Tan Ruz | Entry-Level SOC Analyst">
+  <meta property="og:description" content="Incident handling, log analysis, SIEM basics, and security labs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ytruzdev-tech.github.io/">
+  <meta property="og:image" content="https://ytruzdev-tech.github.io/assets/me.jpg">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#hero">Skip to content</a>
+
+<header class="nav">
+  <a class="logo" href="#hero">&gt;</a>
+  <button class="burger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a>
+    <a href="#learning">Learning</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. HERO -->
+<section id="hero" class="hero">
+  <div class="hero-text reveal">
+    <p class="mono accent">Hi, I'm</p>
+    <h1>Yule Tan Ruz <span class="sub"></span></h1>
+    <h2 class="mono">Entry-Level SOC Analyst | Junior Incident Handler | IT Support (Security)</h2>
+    <p>I detect, triage, and document security incidents, with a calm head and clean notes.</p>
+    <div class="btns">
+      <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </div>
+  <!-- Profile card: two stacked photos, swapped by .flipped (hover or tap) -->
+  <div class="photo-wrap reveal">
+    <div class="photo-card" id="photoCard" tabindex="0" role="button" aria-label="Profile photo. Hover or tap to change photo">
+      <img class="p1" src="yule2.jpg" alt="Portrait of Hehe (Yule Tan Ruz)">
+      <img class="p2" src="yule.jpg" alt="Second portrait of Hehe (Yule Tan Ruz)">
+    </div>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about">
+  <h2 class="title reveal">About</h2>
+  <div class="reveal">
+    <p>I'm an ICT-strand Senior High School graduate from Asian Institute of Computer Studies, now focused on a career in security operations. I completed TESDA Computer Security Incident Handling Level I at A1 Ventures Technical and Vocational. I enjoy digging through logs, spotting what doesn't belong, and writing it up so others can act on it. I'm currently building hands-on experience through home labs and TryHackMe.</p>
+    <div class="tags"><span class="tag">Documentation</span><span class="tag">Communication</span><span class="tag">Attention to Detail</span></div>
+  </div>
+</section>
+
+<!-- 3. SKILLS (rendered from js/main.js) -->
+<section id="skills">
+  <h2 class="title reveal">Skills</h2>
+  <div class="legend reveal"><span class="badge hands">Hands-on</span> practiced in labs &nbsp; <span class="badge learn">Learning</span> in progress</div>
+  <div id="skillGrid" class="grid"></div>
+</section>
+
+<!-- 4. EDUCATION & CERTS -->
+ <section id="education">
+  <h2 class="title reveal">Education &amp; Certifications</h2>
+  <div class="grid two">
+    <div class="card reveal">
+      <h3>Education</h3>
+      <p><strong>ICT Strand, Senior High School</strong></p>
+      <p class="muted">Asian Institute of Computer Studies</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>Certifications / Training</h3>
+      <p><strong>TESDA Computer Security Incident Handling Level I</strong></p>
+      <p class="muted">A1 Ventures Technical and Vocational</p>
+      <hr style="border:0;border-top:1px solid var(--line);margin:1rem 0">
+      <p><strong>JavaScript Essentials 1 (JSE1)</strong></p>
+      <p class="muted">Cisco Networking Academy</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CURRENTLY LEARNING -->
+<section id="learning">
+  <h2 class="title reveal">Currently Learning</h2>
+  <div class="card reveal"><h3>TryHackMe: SOC Level 1</h3>
+    <p>Working through alert triage, SIEM investigation, phishing analysis, and incident response workflows.</p></div>
+</section>
+
+<!-- 6. PROJECTS (rendered from js/main.js) -->
+<section id="projects">
+  <h2 class="title reveal">Projects</h2>
+  <h3 class="reveal">Security Labs</h3><div id="secProjects" class="grid"></div>
+  <h3 class="reveal" style="margin-top:2rem">Development Projects</h3><div id="devProjects" class="grid"></div>
+</section>
+
+<!-- 7. RESUME -->
+<section id="resume">
+  <h2 class="title reveal">Resume</h2>
+  <div class="card reveal"><p>Download my resume (PDF).</p>
+    <a class="btn primary" href="assets/resume.pdf" download>Download Resume (PDF)</a></div>
+</section>
+
+<!-- 8. CONTACT -->
+<section id="contact">
+  <h2 class="title reveal">Contact</h2>
+  <div class="grid two">
+    <form id="contactForm" class="card reveal" novalidate>
+      <label for="from_name">Name</label>
+      <input id="from_name" name="from_name" type="text" required autocomplete="name">
+      <label for="reply_to">Email</label>
+      <input id="reply_to" name="reply_to" type="email" required autocomplete="email">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <!-- Honeypot: hidden from humans; bots fill it and get blocked -->
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn primary" id="sendBtn" type="submit">Send</button>
+      <p id="formStatus" class="status" aria-live="polite"></p>
+    </form>
+    <div class="card reveal"><h3>Find me online</h3>
+      <p><a href="https://github.com/ytruzdev-tech" target="_blank" rel="noopener">GitHub: ytruzdev-tech</a></p>
+      <p><a href="https://www.linkedin.com/in/yule-ruz-96b70840b" target="_blank" rel="noopener">LinkedIn: Yule Ruz</a></p>
+      <p><a href="mailto:work.ytruz@gmail.com">work.ytruz@gmail.com</a></p></div>
+  </div>
+</section>
+</main>
+
+<footer>&copy; <span id="yr"></span> Hehe (Yule Tan Ruz). Built with plain HTML, CSS &amp; JS.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
